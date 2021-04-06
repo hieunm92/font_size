@@ -1,12 +1,12 @@
 <h2>Lover profile</h2>
 <label>
   Lover name:
-  <input type="text" (change)="updateName($event.target.value)">
+  <input type="text" [ngModel]="petName">
 </label>
 <br >
 <label>
   Lover image:
-  <input type="url" (change)="updateImage($event.target.value)">
+  <input type="url" [ngModel]="petImage">
 </label>
 <br >
 <h3>Lover name: {{petName}}</h3>
